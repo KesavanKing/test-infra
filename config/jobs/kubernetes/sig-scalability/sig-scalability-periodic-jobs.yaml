@@ -7,7 +7,7 @@ periodics:
   - "perfDashJobType: performance"
   - "perfDashBuildsCount: 1"
   labels:
-    preset-service-account: "true"
+    preset-service-account: "false"
     preset-k8s-ssh: "true"
   spec:
     containers:
