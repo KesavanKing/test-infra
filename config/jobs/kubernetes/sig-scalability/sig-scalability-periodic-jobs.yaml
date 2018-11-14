@@ -14,3 +14,17 @@ periodics:
     - image: gcr.io/scp-engsrvperfdev-gcp/test-sh:2.0
       command: ["./run-e2e.sh"]
       args: ["cluster-loader"]
+- interval: 5m
+  name: clus
+  tags:
+  - "perfDashPrefix: clus"
+  - "perfDashJobType: performance"
+  - "perfDashBuildsCount: 10"
+  labels:
+    preset-service-account: "false"
+    preset-k8s-ssh: "true"
+  spec:
+    containers:
+    - image: gcr.io/scp-engsrvperfdev-gcp/test-sh:2.0
+      command: ["./run-e2e.sh"]
+      args: ["cluster-loader"]
