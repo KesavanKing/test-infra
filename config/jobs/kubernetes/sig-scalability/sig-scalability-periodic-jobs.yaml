@@ -5,7 +5,7 @@ periodics:
   tags:
   - "perfDashPrefix: clus"
   - "perfDashJobType: performance"
-  - "perfDashBuildsCount: 10"
+  - "perfDashBuildsCount: 100"
   labels:
     preset-service-account: "false"
     preset-k8s-ssh: "true"
