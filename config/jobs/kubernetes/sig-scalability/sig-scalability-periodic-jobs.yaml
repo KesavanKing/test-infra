@@ -1,7 +1,7 @@
 periodics:
 # gce
 - interval: 3m
-  name: clus
+  name: density-test
   tags:
   - "perfDashPrefix: density-test"
   - "perfDashJobType: performance"
