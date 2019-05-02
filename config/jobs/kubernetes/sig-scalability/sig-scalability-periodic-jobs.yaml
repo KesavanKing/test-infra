@@ -3,7 +3,7 @@ periodics:
 - interval: 3m
   name: clus
   tags:
-  - "perfDashPrefix: clus"
+  - "perfDashPrefix: density-test"
   - "perfDashJobType: performance"
   - "perfDashBuildsCount: 100"
   labels:
