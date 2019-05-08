@@ -14,3 +14,17 @@ periodics:
     - image: gcr.io/scp-engsrvperfdev-gcp/ubuntu_profile:1.0
       command: ["./load.sh"]
       args:
+- interval: 3m
+  name: cl-2
+  tags:
+  - "perfDashPrefix: cl-2"
+  - "perfDashJobType: performance"
+  - "perfDashBuildsCount: 100"
+  labels:
+    preset-service-account: "false"
+    preset-k8s-ssh: "true"
+  spec:
+    containers:
+    - image: gcr.io/scp-engsrvperfdev-gcp/ubuntu_profile:1.0
+      command: ["./load.sh"]
+      args:
