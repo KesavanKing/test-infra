@@ -15,6 +15,20 @@ periodics:
       command: ["./load.sh"]
       args:
 - interval: 3m
+  name: clus
+  tags:
+  - "perfDashPrefix: clus"
+  - "perfDashJobType: performance"
+  - "perfDashBuildsCount: 200"
+  labels:
+    preset-service-account: "false"
+    preset-k8s-ssh: "true"
+  spec:
+    containers:
+    - image: gcr.io/scp-engsrvperfdev-gcp/ubuntu_profile:1.0
+      command: ["./load.sh"]
+      args:
+- interval: 3m
   name: density-test-aws
   tags:
   - "perfDashPrefix: density-test-aws"
