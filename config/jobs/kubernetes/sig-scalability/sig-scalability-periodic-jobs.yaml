@@ -1,11 +1,11 @@
 periodics:
 # gce
 - interval: 3m
-  name: cl-2
+  name: pooja
   tags:
-  - "perfDashPrefix: cl-2"
+  - "perfDashPrefix: pooja"
   - "perfDashJobType: performance"
-  - "perfDashBuildsCount: 100"
+  - "perfDashBuildsCount: 10"
   labels:
     preset-service-account: "false"
     preset-k8s-ssh: "true"
